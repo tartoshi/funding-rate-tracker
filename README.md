@@ -1,16 +1,16 @@
 # Hyperliquid Funding Rate Tracker
 
-Tools I built to track funding rates on Hyperliquid and backtest arb strategies.
+Tool I built to track funding rates on Hyperliquid and backtest arb strategies. Cross refrences trad stocks against Hyperliquid perps. Calcualtes, backtests PNL hourly. 
 
 ## Scripts
 
 ### `fundingrate.py`
-Pulls historical funding rates for any coin on Hyperliquid. Shows hourly rates, annualized %, and averages.
+Pulls historical funding rates for any coin on Hyperliquid. Shows hourly rates, annualized %, and averages. 
 
 ![Funding Rate Output](images/fundingrate1.png)
 
 ### `spotstockarb.py`
-Backtests a delta-neutral arb: long a stock/ETF, short the corresponding Hyperliquid perp. Calculates PnL from both price movement and funding payments.
+Backtests a delta-neutral arb: long a stock/ETF, short the corresponding Hyperliquid perp. Calculates PnL from both price movement and funding payments. Hourly, accounts for 24-hr trading on HL vs public hours for NYSE. 
 
 ![Arb Calculator Output](images/spotstockarb1.png)
 ![Arb Summary](images/spotstockarb2.png)
